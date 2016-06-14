@@ -1,11 +1,13 @@
+#ifndef MUL_H
+#define MUL_H
+
+
 /**
  * Multiplication
  */
 
 template<typename A, typename B>
-struct Mul_
-{
-};
+struct Mul_;
 
 template<typename A, typename B>
 using Mul = typename Mul_<A, B>::result;
@@ -21,3 +23,6 @@ struct Mul_<Succ<A>, B>
 {
     typedef Add<B, Mul<A, B>> result;
 };
+
+
+#endif // MUL_H

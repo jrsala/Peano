@@ -1,11 +1,13 @@
+#ifndef ADD_H
+#define ADD_H
+
+
 /**
  * Addition
  */
 
 template<typename A, typename B>
-struct Add_
-{
-};
+struct Add_;
 
 template<typename A, typename B>
 using Add = typename Add_<A, B>::result;
@@ -21,3 +23,6 @@ struct Add_<Succ<A>, B>
 {
     typedef Succ<Add<A, B> > result;
 };
+
+
+#endif // ADD_H

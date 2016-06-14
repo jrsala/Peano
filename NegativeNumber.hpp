@@ -1,3 +1,7 @@
+#ifndef NEGATIVENUMBER_H
+#define NEGATIVENUMBER_H
+
+
 #include "Add.hpp"
 #include "Mul.hpp"
 
@@ -61,3 +65,6 @@ struct Mul_<Minus_<A>, B>
 {
     typedef Minus<Mul<A, B> > result;
 };
+
+
+#endif // NEGATIVENUMBER_H

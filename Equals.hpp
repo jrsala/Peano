@@ -1,3 +1,7 @@
+#ifndef EQUALS_H
+#define EQUALS_H
+
+
 #include <type_traits>
 
 
@@ -6,9 +10,7 @@
  */
 
 template<typename A, typename B>
-struct Equals
-{
-};
+struct Equals;
 
 template<>
 struct Equals<Zero, Zero> : public std::true_type
@@ -29,3 +31,6 @@ template<typename A, typename B>
 struct Equals<Succ<A>, Succ<B> > : public Equals<A, B>
 {
 };
+
+
+#endif // EQUALS_H

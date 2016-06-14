@@ -10,6 +10,8 @@ void log(const T& x)
 #include "Peano.hpp"
 #include "Add.hpp"
 #include "Mul.hpp"
+#include "Equals.hpp"
+#include "LessThan.hpp"
 #include "NegativeNumber.hpp"
 #include "List.hpp"
 #include "Fold.hpp"

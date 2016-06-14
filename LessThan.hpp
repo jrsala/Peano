@@ -1,3 +1,7 @@
+#ifndef LESSTHAN_H
+#define LESSTHAN_H
+
+
 #include <type_traits>
 
 
@@ -6,9 +10,7 @@
  */
 
 template<typename A, typename B>
-struct LessThan
-{
-};
+struct LessThan;
 
 template<typename B>
 struct LessThan<Zero, B> : public std::true_type
@@ -24,3 +26,6 @@ template<typename A, typename B>
 struct LessThan<Succ<A>, Succ<B> > : public LessThan<A, B>
 {
 };
+
+
+#endif // LESSTHAN_H

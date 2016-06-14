@@ -1,3 +1,7 @@
+#ifndef FOLD_H
+#define FOLD_H
+
+
 #include "List.hpp"
 
 
@@ -19,3 +23,6 @@ struct Fold_<EmptyList, Acc, F>
 {
     typedef Acc result;
 };
+
+
+#endif // FOLD_H

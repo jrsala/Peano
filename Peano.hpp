@@ -1,3 +1,7 @@
+#ifndef PEANO_H
+#define PEANO_H
+
+
 /**
  * Zero and Successor function
  */
@@ -12,3 +16,6 @@ struct Succ
 {
     static constexpr int value = 1 + T::value;
 };
+
+
+#endif // PEANO_H
